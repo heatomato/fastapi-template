@@ -27,6 +27,10 @@ COPY pyproject.toml poetry.lock ./
 RUN poetry config virtualenvs.create false && \
     poetry install --no-dev --no-interaction --no-ansi
 
+
+# Link to git repository if needed
+LABEL org.opencontainers.image.source=https://github.com/heatomato/fast-api-template
+
 # Copy Mise configuration if needed
 #COPY mise.toml ./
 
