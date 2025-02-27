@@ -29,7 +29,7 @@ RUN poetry config virtualenvs.create false && \
 
 
 # Link to git repository if needed
-LABEL org.opencontainers.image.source=https://github.com/heatomato/fast-api-template
+LABEL org.opencontainers.image.source=https://github.com/heatomato/fastapi-template
 
 # Copy Mise configuration if needed
 #COPY mise.toml ./
